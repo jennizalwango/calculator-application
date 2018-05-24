@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    
+     <!-- link for external css -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="calculator.js"></script>
+  
+</head>
+<body>
+    <div class="myContainer">
+        <div class="calculator">
+        
+                <h1 id="heading">Calculator Application</h1>
+              
+                <div class="calculator-btns">
+                    <!-- Addition -->
+                    <input type="number" id="addValue1" value=""> +
+                    <input type="number"  id="addValue2"value=""> =
+                    <button id="addition">Answer</button>
+                    <input type="submit"value ="Add" id="addNumbers">
+                
+                    <br><br>
+
+
+                    <!-- subtraction -->
+                    <input type="number" id="subtractValue1" value=""> -
+                    <input type="number"  id="subtractValue2"value=""> =
+                    <button id="subtract">Answer</button>
+                    <input type="submit"value ="subtract" id="subtractNumbers" class="btn btn-danger"><br> <br>
+
+
+                    <!-- multiplication -->
+                    <input type="number" id="multiplyValue1" value=""> *
+                    <input type="number"  id="multiplyValue2"value=""> =
+                    <button id="multiply">Answer</button>
+                    <input type="submit"value ="multiply" id="multiplyNumbers" class="btn btn-primary"><br><br>
+
+
+                    <!-- division -->
+                    <input type="number" id="divideValue1" value=""> /
+                    <input type="number"  id="divideValue2"value=""> =
+                    <button id="divide">Answer</button> 
+                    <input type="submit"value ="divide" id="divideNumbers" class="btn btn-warning">
+            </div>
+        </div>
+    
+    </div>
+
+    <script>
+    
+        //handles Addition
+        var addValueOne = document.querySelector("#addValue1");
+        var addValueTwo = document.querySelector("#addValue2");
+       
+        addNumbers.addEventListener('click', myAnswer);
+
+        function myAnswer(){
+            var answer = document.querySelector("#addition");
+            answer.innerHTML = Number(addValueOne.value) + Number(addValueTwo.value);
+            //return Number(valueOne.value) + Number(valueTwo.value);
+        }
+        //end of addition
+
+        
+
+
+        //handles subtraction
+        var subtractValue1 = document.querySelector("#subtractValue1");
+        var subtractValue2 = document.querySelector("#subtractValue2");
+       
+        subtractNumbers.addEventListener('click', myAnswer1);
+
+        function myAnswer1(){
+            var subtraction = document.querySelector("#subtract");
+            subtraction.innerHTML = Number(subtractValue1.value) - Number(subtractValue2.value);
+        }
+        //end of subtraction
+
+
+
+        //handles multiplication
+        var multiplyValue1 = document.querySelector("#multiplyValue1");
+        var multiplyValue2  = document.querySelector("#multiplyValue2");
+       
+        multiplyNumbers.addEventListener('click', myAnswer2);
+
+        function myAnswer2(){
+            var multiplication = document.querySelector("#multiply");
+            multiplication.innerHTML = Number(multiplyValue1.value) * Number(multiplyValue2.value);
+        }
+        //end of multiplication
+
+
+
+        //handles division
+        var divideValue1 = document.querySelector("#divideValue1");
+        var divideValue2  = document.querySelector("#divideValue2");
+    
+        divideNumbers.addEventListener('click', myAnswer3);
+
+        function myAnswer3(){
+            if (divideValue2.value == 0){
+               alert("You can't divide any number by 0");
+            }else
+            var division = document.querySelector("#divide");
+            division.innerHTML = Number(divideValue1.value) / Number(divideValue2.value);
+        }
+          //end of division
+
+    
+    </script>
+</body>
+</html>

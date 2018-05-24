@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+        background-color:#c7c5c5;
+}
+
+.myContainer{
+    margin: 100px 250px 300px 390px;
+    height: 300px;
+    width: 400px;
+}
+
+
+
+/* centering the div with a class of container */
+.calculator{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #777;
+    position: relative;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(77, 50, 41); 
+    border-radius: 10px;
+    background-color: rgba(46, 49, 51, 0.51);
+}
+
+
+
+
+/* heading styles */
+#heading{
+    padding: 20px;
+    color:rgba(3, 23, 88, 0.7);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/* input style for type numbers */
+input[type=number]{
+padding: 13px;
+border-radius:5px;
+border:none;
+width: 12%;
+
+}
+
+
+/* input style for type submit */
+input[type=submit]{
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+    background-color: #7a9ce0;
+
+    }
+/*  answer button styles */
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(190, 194, 190);
+    color: #222;
+}
+
+/* Pushes the buttons in the div with calculator class to the middle */
+.calculator-btns{
+    margin-left: 50px;
+}
+
+
+/* style for Add button */
+#addNumbers{
+    background-color: forestgreen;
+    color: #fff;
+}
+
+
+/* Style for subtract button*/
+#subtractNumbers{
+    background-color: rgb(228, 51, 51);
+    color: #fff;
+}
+
+
+/* Style for multiply button*/
+#multipyNumbers{
+    background-color: rgb(48, 69, 165);
+    color: #fff;
+}
+
+
+/* Style for multiply button*/
+#divideNumbers{
+    background-color: rgb(228, 195, 51);
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+    margin: 0 auto;
+    }
+}
